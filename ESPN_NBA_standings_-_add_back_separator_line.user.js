@@ -13,7 +13,7 @@
 var $jq311 = $.noConflict( true );
 
 $jq311( document ).ready( function() {
-        getrowsFor8thPlaceTeams().each( function() {
+        getRowsFor8thPlaceTeams().each( function() {
             $jq311( this ).children( "td" ).each( function() {
                      $jq311( this ).css( "border-bottom", "1pt solid black" );
                 }
@@ -22,6 +22,6 @@ $jq311( document ).ready( function() {
     );
 });
 
-function getrowsFor8thPlaceTeams() {
+function getRowsFor8thPlaceTeams() {
     return $jq311( document ).find( "table.standings tr:nth-child( 8 )" );
 }
